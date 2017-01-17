@@ -1,0 +1,36 @@
+.number, .symbol, .other, .equals {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.number {
+    background: yellow;
+}
+
+.symbol {
+    background: green;
+}
+
+.equals {
+    background: lightblue;
+}
+
+#screen {
+    height: 50px;
+    padding: 10px;
+    font-family: Courier New, Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    background: lightgray;
+
+}
+
+.negative {
+    color: red;
+}
+
+.positive {
+    color: green;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+
+        ul li {
+            color: blue;
+            width: 30%;
+            height: 50px;
+            border: 1px solid black;
+            border-bottom: none;
+            list-style: none;
+        }
+
+        ul li:last-child {
+            border-bottom: 1px solid black;;
+
+        }
+
+        ul li input {
+            height: 25px;
+            line-height: 25px;
+        }
+
+        ul li span {
+            height: 25px;
+            line-height: 25px;
+        } 
+
+    </style>
+    </head>
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js" 
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+                crossorigin="anonymous"></script>
+    <script src="helper.js"></script>
+    <script src="tasklist.js"></script>
+    <body>
+        <h1>Add list items!</h1>
+        <input type="text" id="listitem"></input> <br/>
+        <button class="addknop">Add</button>
+        <br/>
+        <ul id="myList">
+        </ul>
+
+        <ul style="display: none">
+            <li id="template">
+                <input class="check" type="checkbox" />
+                <span class="text">Item!</span>
+                <button class="remove" style="display: none">Delete</button>
+            </li>
+        </ul>
+    </body>
+</html>
